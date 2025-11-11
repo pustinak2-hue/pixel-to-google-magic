@@ -1,18 +1,13 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/pixel-hero.png";
-
 export const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image with overlay */}
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
+      <div className="absolute inset-0 z-0" style={{
+      backgroundImage: `url(${heroImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }}>
         <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
       </div>
 
@@ -21,10 +16,10 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="space-y-4">
             <div className="inline-block">
-              <h1 className="text-6xl md:text-8xl font-bold uppercase tracking-tighter mb-4">
-                <span className="text-primary glow-cyan">Pixel</span>{" "}
-                <span className="text-secondary glow-pink">Art</span>{" "}
-                <span className="text-accent">Studio</span>
+              <h1 className="text-6xl uppercase tracking-tighter mb-4 md:text-8xl font-bold">
+                <span className="text-primary glow-cyan">JAKUB</span>{" "}
+                <span className="text-secondary glow-pink">PUSTINA</span>{" "}
+                <span className="text-accent">DEVELOPER</span>
               </h1>
             </div>
             <p className="text-xl md:text-2xl text-foreground/90 max-w-2xl mx-auto">
@@ -63,6 +58,5 @@ export const Hero = () => {
       <div className="absolute inset-0 z-20 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent animate-pulse" />
       </div>
-    </section>
-  );
+    </section>;
 };
